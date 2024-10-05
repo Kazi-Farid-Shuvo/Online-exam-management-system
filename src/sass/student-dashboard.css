@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* width: 100%;
+      height: auto; */
+  font-family: Poppins;
+  overflow: hidden;
+}
+/* navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 115px;
+}
+
+.user-img img {
+  width: 65px;
+  height: 65px;
+  padding-left: 75px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* sidebar */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: aquamarine;
+  margin-top: 120px;
+  border-radius: 0px 20px 20px 0px;
+  background: linear-gradient(199.57deg, #41528e 34.02%, #1a99a2 104.29%),
+    #41528e;
+}
+
+/* sidebar menu */
+.side-menu-list {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.side-menu {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  height: 100px;
+  border-bottom: 1px solid #1a99a2;
+  transition: 0.5s;
+}
+
+.side-menu img {
+  margin-right: 15px;
+}
+
+.side-menu a {
+  width: 100%;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.side-menu:hover {
+  transform: translateY(-10px);
+}
+
+/* ~~~sidebar~~~ */
+
+/* Main container */
+.container {
+  position: absolute;
+  top: 125px;
+  left: 350px;
+  width: 70%;
+  height: auto;
+}
+
+.top-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.container .title {
+  width: auto;
+}
+
+.container .title h3{
+  font-size: 26px;
+  font-weight: 700;
+  color: #353535;
+}
+
+.container .title h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #CCCCCC;
+}
+
+/* searchbar */
+.top-sec input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+}
+.top-sec .search-course button {
+  width: auto;
+  height: auto;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  
+  cursor: pointer;
+}
+
+.search-course form {
+  display: flex;
+}
+
+
+/* cards */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  margin: 40px 0;
+}
+
+.main-container .card {
+  position: relative;
+  min-width: 400px;
+  height: 300px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.main-container .card .box {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  /* padding: 20px 20px; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* background: #838383; */
+  /* border: 2px solid #1e1f23; */
+  border-radius: 40px;
+  box-shadow: 10px 10px 20px 0px rgba(153, 153, 153, 0.5);
+  transition: 0.5s;
+  overflow: visible;
+}
+.main-container .card .box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(58, 178, 202, 0.169);
+  border-radius: 40px 10px 10px 40px;
+  pointer-events: none;
+}
+.main-container .card .box:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 20px 0px rgba(153, 153, 153, 0.5);
+}
+.main-container .card .box .content {
+  padding: 20px;
+  /* text-align: center; */
+}
+.main-container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8em;
+  /* color: rgba(0, 0, 0, 0.05); */
+}
+.main-container .card .box .content h3 {
+  font-size: 1.8em;
+  color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transition: 0.5s;
+}
+.main-container .card .box .content p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transition: 0.5s;
+}
+.main-container .card:hover .box .content h3,
+.main-container .card:hover .box .content p {
+  color: rgb(35, 35, 35);
+}
+.main-container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #1a99a2;
+  margin-top: 15px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 400;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* progress bar */
+.main-container .progress-bar {
+  width: auto;
+  height: 10px;
+  background-color: #e2e1e1;
+  border-radius: 5px;
+  margin: 20px;
+  margin-top: auto;
+  margin-bottom: 40px;
+}
+
+.prog-bar {
+  width: 70%;
+  height: 10px;
+  background-color: #1a99a2 !important;
+  border-radius: 5px;
+}
